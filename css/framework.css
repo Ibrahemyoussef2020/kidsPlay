@@ -64,6 +64,7 @@ select,button{
     z-index: 10;
     font-family: "Font Awesome 6 Free";
     font-weight: 700;
+    font-size: 15px;
 }
 
 @media (min-width:560px){
