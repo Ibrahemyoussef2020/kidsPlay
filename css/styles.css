@@ -3,11 +3,18 @@
 
 .main-header{
     background-color:#7754f6;
+    color: #fff;
     padding: 1rem 0;
+    font-weight:600;
+    font-size: 1.2rem;
 }
 
-.container--header{
-    
+.main-header img{
+    width: 35px;
+    height: 25px;
 }
+
 
 /* --------------------- nav ----------------*/
+
+
