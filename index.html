@@ -14,18 +14,54 @@
 <body>
     <header class="main-header">
         <div class="container container--header center-between">
-            <a href="tel:01147359396">
-                <img src="./images/header-phone.png" alt="Ibrahime mobile">
+            <a href="tel:01147359396" class="main-header__tele flex-center">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>01147359396</span>
             </a>
             <p>
                 Free shipping on all orders $200+ USD
             </p>
     
-            <select name="lang" id="select-lang">
-                <option value="English">English</option>
-            </select>
+            <div class="relative select-wrapper">
+                <select name="lang" id="select-lang">
+                    <option value="English">English</option>
+                </select>
+            </div>
         </div>
     </header>
-    
+    <nav class="main-nav">
+        <div class="container container--nav center-between">
+            <a href="#"><img src="./images/header-logo.png" alt="KidsPlay" /></a>
+
+            <ul class="components-links flex-center">
+                <li><a href="discover">Discover</a></li>    
+                <li><a href="arrivals">Arrivals</a></li>
+                <li><a href="shop">Shop</a></li>
+                <li><a href="popular">Popular</a></li>
+                <li><a href="discover">Discover</a></li>
+                <li><a href="sign">Sign</a></li>
+                </li>
+            </ul>
+
+            <ul class="pages-links flex-center">
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li class="card-icon-item">
+                    <a href="#" class="relative">
+                        <i class="fa-solid fa-cart-flatbed"></i>
+                        <span class="purshes-count">3</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="sign">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </body>
 </html>
