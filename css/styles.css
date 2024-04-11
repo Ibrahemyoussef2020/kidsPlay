@@ -2,7 +2,7 @@
 /* --------------------- header ----------------*/
 
 .main-header{
-    background-color:#7754f6;
+    background-color:var(--mouve-color);
     color: #fff;
     padding: 1rem 0;
     font-weight:600;
@@ -22,9 +22,8 @@
 .components-links{
     position: relative;
     gap: 2rem;
-    color:#5238af;
-    font-size: 1.2rem;
-    font-weight: 600;
+    color:var(--mouve-color);
+    font-size: 1.3rem;
 }
 
 .components-links li{
@@ -38,7 +37,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #7754f6;
+    background-color: var(--mouve-color);
     transition: transform .2s linear;
     transform: scale3d(0,1,1);
     transform-origin: left center;
@@ -50,7 +49,7 @@
 
 .pages-links{
     gap: 1.5rem;
-    color:#5238af;
+    color:var(--mouve-color);
     font-size: 1.5rem;
 }
 .pages-links li{
@@ -68,7 +67,7 @@
     width: 30px;
     height: 25px;
     color: #fff;
-    background:rgb(199 21 134);
+    background:var(--pink-color);
     border-radius: 50%;
     text-align: center;
     font-size:1.1rem;
@@ -77,6 +76,71 @@
 
 .card-icon-item:hover > a > .purshes-count{
     background-color:green
+}
+
+/* --------------------------- hero --------------------------*/
+
+.hero{
+    position: relative;
+    background-color: var(--mouve-color);
+    z-index: 0;
+    
+}
+
+.container--hero{
+    min-height: 450px;
+}
+
+.container--hero h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+}
+
+.container--hero p{
+    line-height: 2;
+    color:var(--light-gray);
+    margin-bottom: 2rem;
+}
+
+.hero__img img{
+    max-width: 100%;
+}
+.hero-top-wavy{
+    position: relative;
+    top: -.828rem;
+    margin-bottom: 5px;
+}
+.hero-top-wavy , .hero-bottom-wavy{
+    display: flex;
+    width:100vw;
+}
+.hero-top-wavy img , .hero-bottom-wavy img{
+    width:50%;
+}
+.hero-bottom-wavy{
+    width: 100%;
+    min-width: 100%;
+    background: var(--mouve-color);
+    margin-top: 5px;
+}
+
+
+
+@media (min-width:900px){
+    .hero__img img{
+        min-height: 450px;
+    }
+    .hero__intro{
+        min-width: 500px;
+    }
+}
+@media (min-width:1200px){
+    
+    .hero__img img{
+        min-width: 700px;
+        min-height: 550px;
+    }
 }
 
 
