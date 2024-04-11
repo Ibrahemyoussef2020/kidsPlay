@@ -5,12 +5,46 @@
     background-color:var(--mouve-color);
     color: #fff;
     padding: 1rem 0;
+}
+
+.container--header{
+    flex-direction: column;
+    gap: .5rem;
     font-weight:600;
-    font-size: 1.2rem;
+    font-size: 15px;
 }
 
 .main-header__tele {
     gap: .5rem;
+}
+
+
+@media (min-width:500px){
+    .container--header {    
+        flex-direction: row;
+    }
+
+    .select-wrapper::after{
+        right: -12px;
+        font-size: 11px;
+    }
+}
+
+@media (min-width:700px){
+    .main-header .select-wrapper{
+        left: -10px;
+    }
+}
+
+@media (min-width:1024px){
+    .container--header {    
+        font-size: 1.2rem;
+    }
+
+    .select-wrapper::after{
+        right: -12px;
+        font-size: 11px;
+    }
 }
 
 /* --------------------- nav ----------------*/
@@ -24,6 +58,7 @@
     gap: 2rem;
     color:var(--mouve-color);
     font-size: 1.3rem;
+    display: none;
 }
 
 .components-links li{
@@ -51,6 +86,7 @@
     gap: 1.5rem;
     color:var(--mouve-color);
     font-size: 1.5rem;
+    display: none;
 }
 .pages-links li{
     transition: color .3s linear;
@@ -78,6 +114,21 @@
     background-color:green
 }
 
+.nav-btn{
+    font-size: 1.5rem;
+    color: var(--mouve-color);
+}
+
+@media (min-width:1024px){
+    .components-links,
+    .pages-links{
+        display: flex;
+    }
+    .nav-btn{
+        display:none;
+    }
+}
+
 /* --------------------------- hero --------------------------*/
 
 .hero{
@@ -89,18 +140,21 @@
 
 .container--hero{
     min-height: 450px;
+    display: block;
 }
 
 .container--hero h1{
-    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     font-weight: 900;
-    margin-bottom: 2rem;
+    line-height: 1.5;
 }
 
 .container--hero p{
     line-height: 2;
     color:var(--light-gray);
     margin-bottom: 2rem;
+    margin-top: 0;
 }
 
 .hero__img img{
@@ -108,7 +162,7 @@
 }
 .hero-top-wavy{
     position: relative;
-    top: -.828rem;
+    top: -4px;
     margin-bottom: 5px;
 }
 .hero-top-wavy , .hero-bottom-wavy{
@@ -119,26 +173,40 @@
     width:50%;
 }
 .hero-bottom-wavy{
+    position: relative;
+    top: 5px;
     width: 100%;
     min-width: 100%;
-    background: var(--mouve-color);
-    margin-top: 5px;
 }
-
-
-
+@media (min-width:560px){
+    .container--hero h1{
+        margin-top: 2rem;
+        font-size: 2.5rem;
+        max-width: 500px;
+    }
+}
 @media (min-width:900px){
+    .container--hero{
+        display: flex;
+    }
     .hero__img img{
         min-height: 450px;
     }
     .hero__intro{
-        min-width: 500px;
+        min-width: 500px; 
+    }
+    .container--hero h1{
+        font-size: 2.5rem;
+        margin-top: 0;
+        margin-bottom: 2rem;
     }
 }
 @media (min-width:1200px){
-    
+    .container--hero{
+        
+    }
     .hero__img img{
-        min-width: 700px;
+        min-width: 500px;
         min-height: 550px;
     }
 }
