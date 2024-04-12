@@ -680,5 +680,79 @@
 }
 
 .container--instagram img{
-    max-width: 100%;
+    width: 100%;
 }
+
+/* ---------------------------------- sign -------------------------*/
+
+.sign{
+    color: #fff;
+}
+
+.sign .content{
+    padding: 2rem 0;
+    position: relative;
+    background-color: #7754f6;
+    z-index: 1;
+}
+
+.container--sign{
+    flex-direction: column;
+}
+
+.sign h2{
+    max-width: 450px;
+    color: #fff;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.sign p {
+    display: none;
+    color:#ddd;
+}
+
+.sign img:first-of-type{
+    position: relative;
+    top: 26px;
+    z-index: 0;
+}
+
+.sign img:last-of-type{
+    position: relative;
+    top: -26px;
+    z-index: 0;
+}
+
+.sign input , .sign button{
+    border: none;
+    outline: none;
+    background-color: #7e5df6;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    color: #fff;
+}
+
+.sign input::placeholder{
+    color: #fefefe;
+}
+
+.sign button{
+    background-color: var(--pink-color);
+}
+
+@media (min-width:900px){
+    .container--sign{
+        flex-direction: row
+    }
+    .sign h2{
+        max-width: unset;
+        text-align: start;
+    }
+    .sign p{
+        display: block;
+    }
+}
+
