@@ -132,6 +132,11 @@ select,button{
        width:500px;
     }
 }
+@media (min-width:630px){
+    .container{
+       width:600px;
+    }
+}
 @media (min-width:767px){
     .container{
        width: 750px;
